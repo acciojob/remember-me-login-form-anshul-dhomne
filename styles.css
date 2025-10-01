@@ -1,1 +1,55 @@
-/*  your css code here. If applicable */
+ body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f9;
+    }
+    .login-container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+    input[type="submit"], 
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover,
+    button:hover {
+      background: #45a049;
+    }
+    #existing {
+      display: none; /* Hidden by default */
+      background: #2196F3;
+    }
+    #existing:hover {
+      background: #1976D2;
+    }
