@@ -4,6 +4,9 @@ const checkbox = document.getElementById("checkbox");
 const existingBtn = document.getElementById("existing");
 const form = document.getElementById("loginForm");
 
+// Always hide button first to avoid race condition
+existingBtn.style.display = "none";
+
 // Check if credentials exist in localStorage
 const savedUsername = localStorage.getItem("username");
 const savedPassword = localStorage.getItem("password");
